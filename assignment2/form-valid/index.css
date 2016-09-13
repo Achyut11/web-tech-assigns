@@ -1,0 +1,23 @@
+/* fieldset { */
+/*     margin-left: 250px; */
+/*     margin-top: 40px; */
+/*     margin-right: 300px ; */
+/* } */
+
+/* form { */
+/*     margin-left: 200px; */
+/* } */
+.btn {
+    margin-left: 110px;
+}
+
+#error {
+    margin-left: 150px;
+    margin-top: 40px;
+    margin-right: 200px;
+    font-size: 25px;
+}
+
+.panel {
+    margin-top: 40px;
+}
