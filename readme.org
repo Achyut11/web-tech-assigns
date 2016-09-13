@@ -1,0 +1,19 @@
+#+TITLE: Assignment of web technologies 
+
+
+* Assignment 1 
+  
+   - Design a simple form using html and css
+   - Design a web template using css and html
+
+* Assignment 2 
+  
+  - Form validations using javascript
+  - Using bootstrap to desin better interface 
+
+* Assignment 3 
+  
+  - Use php cookie to do CRUD operations
+  - Display the  user infos in a tabular format
+
+
