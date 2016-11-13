@@ -17,3 +17,6 @@
   - Display the  user infos in a tabular format
 
 
+* Assignment 4 
+  - Connect PHP application With mysql database 
+  - CRUD operations mysql 
