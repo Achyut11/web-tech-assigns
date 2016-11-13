@@ -1,0 +1,12 @@
+#+TITLE: CRUD application with Rails 5 and MongoDb
+#+DESCRIPTION: CLone of php with mysql 
+
+
+* How 
+  #+BEGIN_SRC bash 
+  rails generate scaffold people fname lname email phone age gender 
+  #+END_SRC
+* Bootstrap 
+  Used some bootstrap but still with todos 
+* Database Used 
+  *MongoDb* 
