@@ -32,7 +32,7 @@ include './database.php';
 
 <div class="panel panel-default">
     <h1>User Information</h1>
-    <div class="table-responsive">
+     <div class="table-responsive">
 	<table class="table table-stripped table-hover">
 	    <tr>
 		<th>S.No</th>
@@ -60,8 +60,8 @@ include './database.php';
 		<td><?php echo $row[1]; ?></td>
 		<td><?php echo $row[2]; ?></td>
 		<td><?php echo $row[3]; ?></td>
-		<td><?php echo $row[4]; ?></td>
 		<td><?php echo $row[5]; ?></td>
+		<td><?php echo $row[4]; ?></td>
 		<td><?php echo $row[6]; ?></td>
 		    <td><a onclick="return delete_validate();" href="./delete.php?id=<?php echo $key; ?>">Delete </a> | 
 			<a href="./edit.php?id=<?php echo $key; ?>" >Edit </a></td>

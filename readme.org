@@ -1,6 +1,7 @@
 #+TITLE: Assignment of web technologies 
 
-
+* Caution: 
+  Don't forget to look at the *railscrud* branch 
 * Assignment 1 
   
    - Design a simple form using html and css
