@@ -1,4 +1,4 @@
-<?php require('./layout/header.php'); ?>
+<?php require('./header.php'); ?>
 
 
 <style type="text/css" rel="stylesheet" href="./index.css"></style>
@@ -8,7 +8,7 @@
 	    <div class="panel-heading ">Signup your information</div>
 	    
 	    <div class="panel-body">
-	<form  method="post" class="form-horizontal" onsubmit="return validation();" action="./php-processor/process.php" >
+	<form  method="post" class="form-horizontal" onsubmit="return validation();" action="process.php" >
 		<div class="form-group ">
 		    <label class="control-label col-sm-2" for="fname">First Name</label>
 		    <div class="col-sm-4">
@@ -73,5 +73,5 @@
 
 
 
-    <?php require('./layout/footer.php'); ?>
+    <?php require('./footer.php'); ?>
 

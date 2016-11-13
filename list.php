@@ -22,13 +22,13 @@
 //      * print_r($userINFOs);
 //      * echo "</pre>";*/
 // }
-include '../database.php';
+include './database.php';
 
 ?>
 
 
-<?php require('../layout/header.php'); ?>
-<link href="../layout/index.css" rel="stylesheet" type="text/css"/>
+<?php require('./header.php'); ?>
+<link href="./layout/index.css" rel="stylesheet" type="text/css"/>
 
 <div class="panel panel-default">
     <h1>User Information</h1>
@@ -71,6 +71,6 @@ include '../database.php';
     </div>
 </div>
 
-<?php require('../layout/footer.php'); ?>
+<?php require('./footer.php'); ?>
 
 

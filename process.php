@@ -3,7 +3,7 @@
 // echo "<pre>";
 // print_r($_POST);
 	
-include '../database.php';
+include './database.php';
 if (isset($_POST['submit'])) {
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];

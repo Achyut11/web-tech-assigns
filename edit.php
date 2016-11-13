@@ -1,7 +1,6 @@
 <?php
-echo "sabin";
 //$cookie = $_COOKIE['userinfos'];
-include '../database.php';
+include './database.php';
 if(isset($_GET['id'])) {
     $id=$_GET['id'];
     // $records = json_decode(($cookie),true);
@@ -25,7 +24,7 @@ if(isset($_GET['id'])) {
 
 ?>
 
-<?php require('../layout/header.php'); ?>
+<?php require('./header.php'); ?>
 
 	<div class="panel panel-default panel-primary">
 	    <div class="panel-heading ">Signup your information</div>
@@ -94,6 +93,6 @@ if(isset($_GET['id'])) {
 
 	</div>
 	</div>
-	<?php require('../layout/footer.php'); ?>
+	<?php require('./footer.php'); ?>
 
 

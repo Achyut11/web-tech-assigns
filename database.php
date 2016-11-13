@@ -1,10 +1,4 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Document</title>
-    </head>
-    <body>
+
 	<?php
 
 	// important credentials 
@@ -17,16 +11,13 @@
 	$connection = mysqli_connect($server, $user, $password, $dbname);
 
 	//check if the database connectivity is correct or not
-	if (!$connection) {
-            echo "database connectivity error ";
-	} else
-	{
-            echo "database succesfully connected";
-	}
+	// if (!$connection) {
+    //         echo "database connectivity error ";
+	// } else
+	// {
+    //         echo "database succesfully connected";
+	// }
 	
 	?>
 	
-
-    </body>
-</html>
 
