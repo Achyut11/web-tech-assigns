@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="panel panel-default">
+    <h1>User's information</h1>
+    <div class="table-responsive">
+	<table class="table table-stripped table-hover">
+  <thead>
+    <tr>
+      <th>first name</th>
+      <th>last name</th>
+      <th>email</th>
+      <th>age</th>
+      <th>Phone</th>
+      <th>Gender</th>
+      <th>Options</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @people.each do |person| %>
+      <tr>
+        <td><%= person.fname %></td>
+        <td><%= person.lname %></td>
+        <td><%= person.email %></td>
+        <td><%= person.age %></td>
+        <td><%= person.phone %></td>
+        <td><%= person.gender %></td>
+        <td><%= link_to 'Show', person %> | 
+        <%= link_to 'Edit', edit_person_path(person) %> | 
+        <%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to 'New Person', new_person_path %>
+    </div>
+</div>
+<br>
+
+
