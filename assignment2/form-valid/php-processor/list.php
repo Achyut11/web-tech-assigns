@@ -16,13 +16,13 @@
 
 <?php
 
-if (isset($_COOKIE['userinfos'])) {
-    $userINFOs = json_decode($_COOKIE['userinfos'],true);
-    /* echo "<pre>";
-     * print_r($userINFOs);
-     * echo "</pre>";*/
-}
-
+// if (isset($_COOKIE['userinfos'])) {
+//     $userINFOs = json_decode($_COOKIE['userinfos'],true);
+//     /* echo "<pre>";
+//      * print_r($userINFOs);
+//      * echo "</pre>";*/
+// }
+include '../database.php';
 
 ?>
 
@@ -45,24 +45,28 @@ if (isset($_COOKIE['userinfos'])) {
 		<th>Options</th>
 	    </tr>
 	    <?php
-	    $i=1; 
-	    if(is_array($userINFOs)){
-		foreach($userINFOs as $key=>$info){
+	    $sqlquery = "SELECT * from persons";
+	    $result = mysqli_query($connection,$sqlquery);
+	    $i=1;
+	    while($row=mysqli_fetch_row($result))
+	    /* if(is_array($userINFOs)){
+	       foreach($userINFOs as $key=>$info){ */
+	    {
+		$key=$row[0];
 	    ?>
+
 		<tr class="success">
-		    <td><?php echo $i++?></td>
-		    <td><?php echo $info['fname'];?></td>
-		    <td><?php echo $info['lname']; ?></td>
-		    <td><?php echo $info['email']; ?></td>
-		    <td><?php echo $info['age']; ?></td>
-		    <td><?php echo $info['phone']; ?></td>
-		    <td><?php echo $info['gender']; ?></td>
-		    <td><a onclick="return delete_validate();" href="./delete.php?id=<?php echo $key; ?>">Delete Cookie</a> | 
-			<a href="./edit.php?id=<?php echo $key; ?>" >Edit Cookie</a></td>
+		<td><?php echo $i++;?></td>
+		<td><?php echo $row[1]; ?></td>
+		<td><?php echo $row[2]; ?></td>
+		<td><?php echo $row[3]; ?></td>
+		<td><?php echo $row[4]; ?></td>
+		<td><?php echo $row[5]; ?></td>
+		<td><?php echo $row[6]; ?></td>
+		    <td><a onclick="return delete_validate();" href="./delete.php?id=<?php echo $key; ?>">Delete </a> | 
+			<a href="./edit.php?id=<?php echo $key; ?>" >Edit </a></td>
 		</tr>		
-	    <?php	}
-	    }
-	    ?>
+	    <?php } ?>
 	</table>
     </div>
 </div>

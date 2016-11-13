@@ -59,17 +59,6 @@
 		    </div>
 		    <label id="error_gender" style="margin-left: 680px; font-size: 16px;"  class="alert-danger"></label> 
 		</div>
-
-		<!-- <div class="form-group">
-		     <label class="col-sm-2 control-label" for="hobbies">Hobbies</label>
-		     <div class="checkbox">
-		     <label><input type="checkbox" name="hobbies" > Singing..</label>
-		     <label><input type="checkbox" name="hobbies" > Playing..</label>
-		     <label><input type="checkbox" name="hobbies" > Dancing..</label>
-		     <label><input type="checkbox" name="hobbies" > Reading..</label>
-		     </div>
-		     </div>
-		     </div>     -->
 		
 		<input name="submit" type="submit" value="submit" class="btn btn-warning " data-toggle="tooltip" title="Click me to register"/>
 
